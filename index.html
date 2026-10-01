@@ -2,9 +2,16 @@
 <html lang="en">
 
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>HAPPY TEACHERS MONTH SIR JAYS!</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
 
         body {
             background: linear-gradient(
@@ -15,47 +22,81 @@
                 #c471ed
             );
 
-            width: 100vw;
-            height: 100vh;
+            background-size: 400% 400%;
+
+            width: 100%;
+            min-height: 100vh;
+
             animation: gradientMove 10s ease infinite;
+
             margin: 0;
             overflow: hidden;
+
+            font-family: 'Times New Roman', Times, serif;
         }
+
+
 
         .Paperbox {
-            height: 370px;
-            width: 600px;
+            width: 33vw;
+            min-height: 34vh;
+
             background-color: gainsboro;
             border-radius: 10px;
+
             position: absolute;
+
             top: 30%;
-            left: 35%;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 30px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            padding: 20px;
+
+            font-size: 3vh;
         }
 
+
+
         #gmaillogo {
-            height: 500px;
-            width: 1000px;
+            width: 50vw;
+            height: auto;
+
             position: absolute;
+
             top: 20%;
-            left: 27%;
+            left: 50%;
+
+            transform: translateX(-50%);
         }
+
+
 
         #Mybutton {
             background-color: green;
+
             position: absolute;
-            left: 45%;
+
+            left: 50%;
             top: 80%;
-            font-size: 40px;
+
+            transform: translateX(-50%);
+
+            font-size: 4vh;
+
             font-family: 'Times New Roman', Times, serif;
+
             color: #c471ed;
+
+            padding: 8px 15px;
         }
+
 
 
         .doonkanga {
             animation: move 2s ease forwards;
         }
+
 
         @keyframes gradientMove {
 
@@ -73,10 +114,11 @@
 
         }
 
+
         @keyframes move {
 
             from {
-                transform: translateX(0);
+                transform: translateX(-50%);
             }
 
             to {
@@ -85,31 +127,89 @@
 
         }
 
+
+
+        @media (max-width: 600px) {
+
+            .Paperbox {
+
+                width: 85vw;
+
+                min-height: 35vh;
+
+                top: 25%;
+
+                left: 50%;
+
+                padding: 15px;
+
+                font-size: 2.3vh;
+
+                line-height: 1.3;
+            }
+
+
+            #gmaillogo {
+
+                width: 80vw;
+
+                top: 15%;
+
+                left: 50%;
+            }
+
+
+            #Mybutton {
+
+                top: 80%;
+
+                left: 50%;
+
+                font-size: 3vh;
+
+                padding: 8px 12px;
+            }
+
+        }
+
     </style>
 
 </head>
 
+
 <body>
 
+
     <p class="Paperbox">
-        Happy Teachers month sir jayson!, alam namen po na maingay at makulit po kame sa klase pero ang masasabi ko lang po ay na mahal na mahal ka po namen, kahit ilan beses nyo po kame dinodogshow, joke. Sa lahat po ng mga pinagdaanan namin, sa lahat po ng mga pagkakamali namen ginawa, ang masasabi ko lang po, ikaw po ang pinakamabait, pinakabest na adviser at teacher na nakilala ko po, maraming salamat po!
+
+        Happy Teachers month sir jayson!, alam namen po na maingay at makulit po kame sa klase pero ang masasabi ko lang po ay na mahal na mahal ka po namen, kahit ilan beses nyo po kame dinodogshow, joke.
+
+        Sa lahat po ng mga pinagdaanan namin, sa lahat po ng mga pagkakamali namen ginawa, ang masasabi ko lang po, ikaw po ang pinakamabait, pinakabest na adviser at teacher na nakilala ko po, maraming salamat po!
+
     </p>
+
 
     <img src="Gmail-Logo-2013-2020.png" id="gmaillogo">
 
+
     <button id="Mybutton" onclick="visibler()">
-        Press me pleasee
+        Press me please
     </button>
+
 
     <script>
 
         let buttonUNO = document.getElementById("gmaillogo");
 
         function visibler() {
+
             buttonUNO.classList.add("doonkanga");
+
         }
 
     </script>
 
+
 </body>
+
 </html>
