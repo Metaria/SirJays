@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HAPPY TEACHERS MONTH SIR JAYS!</title>
+
+    <style>
+
+        body {
+            background: linear-gradient(
+                135deg,
+                #ff69b4,
+                #ff9a9e,
+                #fad0c4,
+                #c471ed
+            );
+
+            width: 100vw;
+            height: 100vh;
+            animation: gradientMove 10s ease infinite;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .Paperbox {
+            height: 34vh;
+            width: 33vw;
+            background-color: gainsboro;
+            border-radius: 10px;
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3vh;
+        }
+
+        #gmaillogo {
+            height: 50vh;
+            width: 50vw;
+            position: absolute;
+            top: 20%;
+            left: 27%;
+        }
+
+        #Mybutton {
+            background-color: green;
+            position: absolute;
+            left: 45%;
+            top: 80%;
+            font-size: 4vh;
+            font-family: 'Times New Roman', Times, serif;
+            color: #c471ed;
+        }
+
+
+        .doonkanga {
+            animation: move 2s ease forwards;
+        }
+
+        @keyframes gradientMove {
+
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+
+        }
+
+        @keyframes move {
+
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(50vw);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p class="Paperbox">
+        Happy Teachers month sir jayson!, alam namen po na maingay at makulit po kame sa klase pero ang masasabi ko lang po ay na mahal na mahal ka po namen, kahit ilan beses nyo po kame dinodogshow, joke. Sa lahat po ng mga pinagdaanan namin, sa lahat po ng mga pagkakamali namen ginawa, ang masasabi ko lang po, ikaw po ang pinakamabait, pinakabest na adviser at teacher na nakilala ko po, maraming salamat po!
+    </p>
+
+    <img src="Gmail-Logo-2013-2020.png" id="gmaillogo">
+
+    <button id="Mybutton" onclick="visibler()">
+        Press me pleasee
+    </button>
+
+    <script>
+
+        let buttonUNO = document.getElementById("gmaillogo");
+
+        function visibler() {
+            buttonUNO.classList.add("doonkanga");
+        }
+
+    </script>
+
+</body>
+</html>
